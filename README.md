@@ -36,4 +36,4 @@ local et hors-ligne y reste.
 
 ### Me joindre
 
-[codeam.fr](https://codeam.fr) · [laurent@codeam.fr](mailto:laurent@codeam.fr)
+[laurent@codeam.fr](mailto:laurent@codeam.fr)
