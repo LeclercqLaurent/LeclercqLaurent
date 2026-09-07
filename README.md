@@ -1,4 +1,4 @@
-## Laurent Leclercq · Codeam
+## Laurent LECLERCQ · Codeam
 
 **Développeur backend PHP, à Lyon.** Applications métier : une API Symfony
 comme unique source de données, des interfaces React / TypeScript par-dessus,
