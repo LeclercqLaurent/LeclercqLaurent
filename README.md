@@ -31,6 +31,7 @@ local et hors-ligne y reste.
 | Projet | Ce que c'est |
 |---|---|
 | [**phpx-complexity**](https://github.com/LeclercqLaurent/phpx-complexity) | Auditeur de complexité PHP multi-lentilles et hors-ligne. Réimplémente nativement S3776 / S107 / S1142, y ajoute deux lentilles maison, et **confronte les lentilles entre elles** : leur divergence révèle ce qu'une métrique isolée laisse passer. Aucun score, jamais — des compteurs confrontés à des seuils. |
+| [**rgaa4-referentiel**](https://github.com/LeclercqLaurent/rgaa4-referentiel) | Le **RGAA 4.1.2** en données exploitables — 106 critères, 258 tests — et surtout la jointure **axe-core → WCAG → RGAA** dans les deux sens. Les outils automatisés rapportent en WCAG, l'obligation légale s'exprime en RGAA : entre les deux, rien n'était publié. Paquets PHP et Node servis depuis un jeu de données unique. |
 | [**elementor-twig-kit**](https://github.com/LeclercqLaurent/elementor-twig-kit) | Preuve de concept : des widgets Elementor dont le balisage est rendu par **Twig** au lieu d'être concaténé dans des `echo`. Échappement par défaut, gabarits surchargeables, et une logique testable **sans WordPress, sans réseau et sans base**. Le vrai sujet y est le mode dégradé : rien de ce qui manque n'interrompt le rendu du site. |
 
 ### Me joindre
