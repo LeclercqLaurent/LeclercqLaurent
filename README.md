@@ -1,4 +1,4 @@
-## Laurent Leclercq — Codeam
+## Laurent Leclercq · Codeam
 
 **Développeur backend PHP, à Lyon.** Applications métier : une API Symfony
 comme unique source de données, des interfaces React / TypeScript par-dessus,
@@ -19,7 +19,7 @@ et la vitrine publique servie par la même stack plutôt que par un CMS de plus.
 > Pas une liste d'intentions : chaque point se vérifie dans les dépôts plus bas.
 
 🧩 &nbsp;**Le métier ne dépend de rien.**
-Domaine en PHP pur — ni framework, ni ORM, ni SDK. Symfony et Doctrine sont des
+Domaine en PHP pur : ni framework, ni ORM, ni SDK. Symfony et Doctrine sont des
 adaptateurs branchés sur des ports définis par le métier, pas la structure du
 projet.
 *→ La suite de tests d'`elementor-twig-kit` tourne **sans WordPress, sans réseau
@@ -35,8 +35,8 @@ vert, rien ne part.
 📏 &nbsp;**Des faits, jamais une note.**
 Une métrique confrontée à un seuil est un fait ; la même résumée en 7,5/10 est
 une opinion déguisée en mesure. Idem pour les tests : les valeurs attendues
-viennent de la spécification, jamais de la sortie de l'outil — figer sa propre
-sortie ne prouve que sa constance.
+viennent de la spécification, jamais de la sortie de l'outil, car figer sa
+propre sortie ne prouve que sa constance.
 *→ `phpx-complexity` refuse de produire le moindre score, et des tests le
 vérifient sur chaque format de sortie.*
 
@@ -49,7 +49,7 @@ plus cher que la fonctionnalité qu'elle apporte.
 🗃️ &nbsp;**Le schéma de base ne dérive jamais.**
 Toute modification passe par une migration Doctrine, générée par `diff`, relue,
 testée sur base vierge. Jamais de `schema:update --force` : il tient en dev et
-tombe à la première base reconstruite depuis les seules migrations — c'est-à-dire
+tombe à la première base reconstruite depuis les seules migrations, c'est-à-dire
 en production, en CI, ou sur le poste du suivant.
 
 ♿ &nbsp;**Conformité par construction.**
@@ -66,7 +66,7 @@ service tiers n'est pas une barrière, c'est une dépendance de plus.
 
 📝 &nbsp;**Documenter l'écart plutôt que le dissimuler.**
 Aucun de ces principes ne tient à 100 % partout. Quand l'un cède, l'écart et son
-motif sont écrits noir sur blanc — c'est plus utile au suivant que de prétendre
+motif sont écrits noir sur blanc. C'est plus utile au suivant que de prétendre
 que le compromis n'existe pas.
 
 ---
@@ -82,10 +82,10 @@ laisse passer. Aucun score, jamais.
 ### 🚦 [phpstan-sonar-rules](https://github.com/LeclercqLaurent/phpstan-sonar-rules)
 Les deux règles de complexité **SonarQube** sans équivalent PHPStan : **S107**
 (trop de paramètres) et **S1142** (trop de points de sortie). Seuils
-configurables, sans serveur Sonar — la barrière existe avant le commit.
+configurables, sans serveur Sonar : la barrière existe avant le commit.
 
 ### ♿ [rgaa4-referentiel](https://github.com/LeclercqLaurent/rgaa4-referentiel)
-Le **RGAA 4.1.2** en données exploitables — 106 critères, 258 tests — et la
+Le **RGAA 4.1.2** en données exploitables (106 critères, 258 tests) et la
 jointure **axe-core → WCAG → RGAA** dans les deux sens. Les outils automatisés
 rapportent en WCAG, l'obligation légale s'exprime en RGAA : entre les deux, rien
 n'était publié. Paquets PHP et Node.
@@ -95,7 +95,7 @@ Preuve de concept : des widgets Elementor rendus par **Twig** au lieu d'être
 concaténés dans des `echo`. Échappement par défaut, gabarits surchargeables,
 logique testable sans WordPress. Le vrai sujet y est le **mode dégradé**.
 
-> **Le fil entre les quatre** — deux outils qui mesurent la complexité sans la
+> **Le fil entre les quatre** : deux outils qui mesurent la complexité sans la
 > résumer, un jeu de données qui rend l'accessibilité vérifiable, et une preuve
 > de concept qui montre à quoi ressemble du code dont le métier ne dépend de rien.
 
